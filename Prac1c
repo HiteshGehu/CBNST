@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+   float tval,aval,rel,abs,per;
+   scanf("%f %f",&tval,&aval);
+   abs = fabs(tval - aval);
+   rel = abs/tval;
+   per = rel * 100;
+   printf("ABsolute error- %f Relative error- %f Percentage error- %f",abs,rel,per);
+}
